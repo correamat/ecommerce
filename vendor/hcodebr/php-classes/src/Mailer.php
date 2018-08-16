@@ -6,8 +6,8 @@ use Rain\Tpl;
 
 
 Class Mailer {
-	Const USERNAME = "bleblebe@gmail.com";
-	const PASSWORD = "blabla";
+	Const USERNAME = "sdadsa@dsadas.com";
+	const PASSWORD = "sdasda";
 	const NAME_FROM = "Mvc Softwares";
 	private $mail;
 	public function __construct($toAddress, $toName, $subject, $tplName, $data = array())
