@@ -16,6 +16,7 @@ require_once("admin-users.php");
 require_once("admin-login.php");
 require_once("admin-categories.php");
 require_once("admin-products.php");
+require_once("functions.php");
 //QUANDO CHAMAR O SITE SEM NENHUMA ROTA ELE VAI EXECUTAR A FUNÇÃO ABAIXO CRIANDO UMA NOVA PAGE
 
 //ROTA DA PAGE ADMIN

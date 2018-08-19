@@ -82,23 +82,26 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="latest-product">
-                        <h2 class="section-title">Produtos</h2>
+                        <h2 class="section-title"><b>Produtos</b></h2>
                         <div class="product-carousel">
+                            {loop="$products"}
                             <div class="single-product">
                                 <div class="product-f-image">
-                                    <img src="res/site/img/product-1.jpg" alt="">
+                                    <img src="{$value.desphoto}" alt="">
                                     <div class="product-hover">
-                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                        <a href="#" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                        <a href="/products/{$value.desurl}" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
                                     </div>
                                 </div>
                                 
-                                <h2><a href="#">Samsung Galaxy s5- 2015</a></h2>
+                                <h2><a href="/products/{$value.desurl}">{$value.desproduct}</a></h2>
                                 
                                 <div class="product-carousel-price">
-                                    <ins>$700.00</ins> <del>$100.00</del>
+                                    <ins>R${function="formatPrice($value.vlprice)"}</ins>
                                 </div> 
                             </div>
+                            {/loop}
+                    <!--
                             <div class="single-product">
                                 <div class="product-f-image">
                                     <img src="res/site/img/product-2.jpg" alt="">
@@ -158,6 +161,7 @@
                                     <ins>$1200.00</ins> <del>$1355.00</del>
                                 </div>                                 
                             </div>
+
                             <div class="single-product">
                                 <div class="product-f-image">
                                     <img src="res/site/img/product-6.jpg" alt="">
@@ -173,6 +177,7 @@
                                     <ins>$400.00</ins>
                                 </div>                            
                             </div>
+                            -->
                         </div>
                     </div>
                 </div>
@@ -187,14 +192,14 @@
                 <div class="col-md-12">
                     <div class="brand-wrapper">
                         <div class="brand-list">
-                            <img src="res/site/img/brand1.png" alt="">
-                            <img src="res/site/img/brand2.png" alt="">
-                            <img src="res/site/img/brand3.png" alt="">
-                            <img src="res/site/img/brand4.png" alt="">
-                            <img src="res/site/img/brand5.png" alt="">
-                            <img src="res/site/img/brand6.png" alt="">
-                            <img src="res/site/img/brand1.png" alt="">
-                            <img src="res/site/img/brand2.png" alt="">                            
+                            <img src="/res/site/img/brand1.png" alt="">
+                            <img src="/res/site/img/brand2.png" alt="">
+                            <img src="/res/site/img/brand3.png" alt="">
+                            <img src="/res/site/img/brand4.png" alt="">
+                            <img src="/res/site/img/brand5.png" alt="">
+                            <img src="/res/site/img/brand6.png" alt="">
+                            <img src="/res/site/img/brand1.png" alt="">
+                            <img src="/res/site/img/brand2.png" alt="">                            
                         </div>
                     </div>
                 </div>
