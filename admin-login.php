@@ -1,5 +1,9 @@
 <?php 
 
+use \Hcode\PageAdmin;
+use \Hcode\Model\User;
+use \Hcode\Model\Product;
+
 $app->get("/admin/forgot", function(){
 
 $page = new PageAdmin([
