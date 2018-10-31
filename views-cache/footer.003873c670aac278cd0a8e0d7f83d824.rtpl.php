@@ -56,7 +56,8 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                        <p>&copy; 2018 Mvc Softwares. <a href="http://www.hcode.com.br" target="_blank">mvcsoftwares.com.br</a></p>
+                       <a href="mvcsoftwares.com.br" target="_blank">  
+                        <p style="text-align: center;">Desenvolvido por Mvc Softwares &copy; 2018.</a></p>
                     </div>
                 </div>
                 
